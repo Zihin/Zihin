@@ -2,26 +2,26 @@
 title: Zihin
 header-img: "img/Xacebook.jpg"
 tagline: "cn"  
-description: "陈素封|读而立·写而生"  
+description: "Zihin|Life"  
 baseurl: ""
 url: "http://cnfeat.com"  
 
 # About/contact
 owner: 
-  name: " CNFeat"
-  email: CnFeat@gmail.com
-  bio: "写就是写的报酬"
+  name: " Zihin"
+  email: zihintse@gmail.com
+  bio: "Bio"
 
 # Data
 gavatar: http://openmindclub.qiniudn.com/omt/GavatarCNFeat.png
 favicon: img/favicon.png
 
-douban_username:  cnfeat
-twitter_username: feat
-github_username: cnfeat
+douban_username: 
+twitter_username: 
+github_username: Zihin
 facebook_username: 
-weibo_username: cnfeat 
-zhihu_username: feat
+weibo_username:  
+zhihu_username: 
 
 # Build settings  
 # use Github Flavored Markdown !important  
