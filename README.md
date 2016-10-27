@@ -1,0 +1,2 @@
+# Zihin
+Blog of Zihin
