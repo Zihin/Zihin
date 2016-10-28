@@ -38,8 +38,8 @@
       <file leaf-file-name="post.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_layouts/post.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="666">
-              <caret line="71" column="32" selection-start-line="71" selection-start-column="32" selection-end-line="71" selection-end-column="32" />
+            <state relative-caret-position="711">
+              <caret line="67" column="18" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -70,7 +70,13 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1477655275000" expanded="true" signature="345:646" ph="..." />
+                <marker date="1477655275000" expanded="true" signature="388:627" ph="..." />
+                <marker date="1477655275000" expanded="true" signature="729:856" ph="..." />
+                <marker date="1477655275000" expanded="true" signature="748:849" ph="..." />
+                <marker date="1477655275000" expanded="true" signature="815:841" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -268,7 +274,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/azeril.github.io-master" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -283,12 +289,12 @@
       <workItem from="1477640584431" duration="66000" />
       <workItem from="1477641159592" duration="2191000" />
       <workItem from="1477644103327" duration="2015000" />
-      <workItem from="1477659182716" duration="84000" />
+      <workItem from="1477659182716" duration="305000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4356000" />
+    <option name="totallyTimeSpent" value="4577000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="48" y="23" width="1393" height="877" extended-state="6" />
@@ -365,7 +371,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1477655275000" expanded="true" signature="345:646" ph="..." />
+            <marker date="1477655275000" expanded="true" signature="388:627" ph="..." />
+            <marker date="1477655275000" expanded="true" signature="729:856" ph="..." />
+            <marker date="1477655275000" expanded="true" signature="748:849" ph="..." />
+            <marker date="1477655275000" expanded="true" signature="815:841" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -421,7 +433,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1477655275000" expanded="true" signature="345:646" ph="..." />
+            <marker date="1477655275000" expanded="true" signature="388:627" ph="..." />
+            <marker date="1477655275000" expanded="true" signature="729:856" ph="..." />
+            <marker date="1477655275000" expanded="true" signature="748:849" ph="..." />
+            <marker date="1477655275000" expanded="true" signature="815:841" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -492,7 +510,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1477655275000" expanded="true" signature="345:646" ph="..." />
+            <marker date="1477655275000" expanded="true" signature="388:627" ph="..." />
+            <marker date="1477655275000" expanded="true" signature="729:856" ph="..." />
+            <marker date="1477655275000" expanded="true" signature="748:849" ph="..." />
+            <marker date="1477655275000" expanded="true" signature="815:841" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -516,8 +540,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/post.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="71" column="32" selection-start-line="71" selection-start-column="32" selection-end-line="71" selection-end-column="32" />
+        <state relative-caret-position="711">
+          <caret line="67" column="18" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="18" />
           <folding />
         </state>
       </provider>
