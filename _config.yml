@@ -45,6 +45,11 @@ timezone: Asia/Shanghai
 # Google Analytics
 # To enable google analytics, uncomment below line with a valid Google Tracking ID
 # google_tracking_id:
+google_analytics: UA-86465655-1
+google_verify:
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
 
 # Build settings
 markdown: kramdown
