@@ -1,0 +1,56 @@
+# Site settings
+title: Ace Hsieh
+header-img: img/home-bg.jpg
+email: zihintse@gmail.com
+copyright_name: Ace ♪ Powered by Jekyll.
+description: "Zihin|Life"
+baseurl: ""
+url: "http://localhost:4000"
+
+twitter_username: tsezihin
+github_username:  Zihin
+facebook_username:  zihin
+email_username:  zihintse@gmail.com
+#zhihu_username: Zihin
+
+
+# About/contact
+owner:
+  name: "Ace Hsieh"
+  email: zihintse@gmail.com
+  bio: "Life is too short for long-term grudges."
+
+
+# Data
+gavatar: http://ofqz295wv.bkt.clouddn.com/avatar-ace.jpg
+favicon: img/avatar-ace.ico
+
+# Defaults for posts
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Ace"
+      header-img: "img/Trello.jpg" # We don't want posts without a header image, that whould mean white on white
+
+
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Shanghai
+
+
+# Google Analytics
+# To enable google analytics, uncomment below line with a valid Google Tracking ID
+# google_tracking_id:
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+gems: [jekyll-paginate, jekyll-feed]
