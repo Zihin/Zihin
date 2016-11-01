@@ -42,75 +42,106 @@ layout: default
                     {% endif %}
                 </ul>
 
-                <!--&lt;!&ndash;Add Disqus&ndash;&gt;-->
-                <!--<div id="disqus_thread"></div>-->
-                <!--<script>-->
-
-                    <!--/**-->
-                     <!--*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.-->
-                     <!--*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/-->
-                    <!--/*-->
-                     <!--var disqus_config = function () {-->
-                     <!--this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable-->
-                     <!--this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable-->
-                     <!--};-->
-                     <!--*/-->
-                    <!--(function() { // DON'T EDIT BELOW THIS LINE-->
-                        <!--var d = document, s = d.createElement('script');-->
-                        <!--s.src = '//http-zihin-top.disqus.com/embed.js';-->
-                        <!--s.setAttribute('data-timestamp', +new Date());-->
-                        <!--(d.head || d.body).appendChild(s);-->
-                    <!--})();-->
-                <!--</script>-->
-                <!--<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>-->
-
                 <hr>
-                <div class="ds-share flat"
-                     data-thread-key="{{page.id}}" data-title="{{page.title}}"
-                     data-images="{{ site.url }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}"
-                     data-content="{{ content | strip_html | truncate:80 }} | Microdust:Azeril's blog"
-                     data-url="{{site.url}}{{page.url}}">
-                    <div class="ds-share-inline">
-                        <ul  class="ds-share-icons-32">
+                <!--<div class="ds-share flat"-->
+                     <!--data-thread-key="{{page.id}}" data-title="{{page.title}}"-->
+                     <!--data-images="{{ site.url }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}"-->
+                     <!--data-content="{{ content | strip_html | truncate:80 }} | Ace Hsieh's blog"-->
+                     <!--data-url="{{site.url}}{{page.url}}">-->
+                    <!--<div class="ds-share-inline">-->
+                        <!--<ul  class="ds-share-icons-32">-->
 
-                            <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">Share To：</a></li>
-                            <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">Sina Weibo</a></li>
-                            <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">Wechat</a></li>
+                            <!--<li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">Share To：</a></li>-->
+                            <!--<li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">Sina Weibo</a></li>-->
+                            <!--<li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">Wechat</a></li>-->
 
-                            <li> <a class="ds-facebook" href="javascript:void(0);" data-service="facebook">Facebook</a> </li>
-                            <li> <a class="ds-twitter" href="javascript:void(0);" data-service="twitter">Twitter</a> </li>
-                            <li> <a class="ds-linkedin" href="javascript:void(0);" data-service="linkedin">Linkedin</a> </li>
+                            <!--<li> <a class="ds-facebook" href="javascript:void(0);" data-service="facebook">Facebook</a> </li>-->
+                            <!--<li> <a class="ds-twitter" href="javascript:void(0);" data-service="twitter">Twitter</a> </li>-->
+                            <!--<li> <a class="ds-linkedin" href="javascript:void(0);" data-service="linkedin">Linkedin</a> </li>-->
 
-                        </ul>
-                        <div class="ds-share-icons-more">
-                        </div>
-                    </div>
+                        <!--</ul>-->
+                        <!--<div class="ds-share-icons-more">-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <!-- JiaThis Button BEGIN -->
+                <div class="jiathis_style">
+                    <span class="jiathis_txt">Share To：</span>
+                    <a class="jiathis_button_tsina">Sina Weibo</a>
+                    <a class="jiathis_button_weixin">Wechat</a>
+                    <a class="jiathis_button_fb">Facebook</a>
+                    <a class="jiathis_button_googleplus">Google+</a>
+                    <a class="jiathis_button_cqq">QQ</a>
+                    <a href="http://www.jiathis.com/share?uid=2118175" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">More</a>
                 </div>
+                <script type="text/javascript">
+                    var jiathis_config = {data_track_clickback:'true'};
+                </script>
+                <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=2118175" charset="utf-8"></script>
+                <!-- JiaThis Button END -->
+
+                <br>
 
 
-                <!-- 多说评论框 start -->
-                <div class="ds-thread" data-thread-key="{{page.id}}" data-title="{{page.title}}" data-url="{{site.url}}{{page.url}}"></div>
-                <!-- 多说评论框 end -->
+                <div id="disqus_thread"></div>
+                <script>
 
+                    /**
+                     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+                    /*
+                     var disqus_config = function () {
+                     this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                     this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                     };
+                     */
+                    (function() { // DON'T EDIT BELOW THIS LINE
+                        var d = document, s = d.createElement('script');
+                        s.src = '//http-zihin-top.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+                <!--&lt;!&ndash; 多说评论框 start &ndash;&gt;-->
+                <!--<div class="ds-thread" data-thread-key="{{page.id}}" data-title="{{page.title}}" data-url="{{site.url}}{{page.url}}"></div>-->
+                <!--&lt;!&ndash; 多说评论框 end &ndash;&gt;-->
+
+                <!--<script>-->
+                    <!--var idcomments_acct = '23a49226c5251efdafe09e919fc09c59';-->
+                    <!--var idcomments_post_id;-->
+                    <!--var idcomments_post_url;-->
+                <!--</script>-->
+                <!--<span id="IDCommentsPostTitle" style="display:none"></span>-->
+                <!--<script type='text/javascript' src='https://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>-->
+
+                <!--&lt;!&ndash; UY BEGIN &ndash;&gt;-->
+                <!--<div id="uyan_frame"></div>-->
+                <!--<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2118175"></script>-->
+                <!--&lt;!&ndash; UY END &ndash;&gt;-->
 
             </div>
         </div>
     </div>
 </article>
 
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-    var duoshuoQuery = {short_name:"zihin"};
-    (function() {
-        var ds = document.createElement('script');
-        ds.type = 'text/javascript';ds.async = true;
-        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.unstable.js';
-        ds.charset = 'UTF-8';
-        (document.getElementsByTagName('head')[0]
-        || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-</script>
-<!-- 多说公共JS代码 end -->
+<!--&lt;!&ndash; 多说公共JS代码 start (一个网页只需插入一次) &ndash;&gt;-->
+<!--<script type="text/javascript">-->
+    <!--var duoshuoQuery = {short_name:"zihin"};-->
+    <!--(function() {-->
+        <!--var ds = document.createElement('script');-->
+        <!--ds.type = 'text/javascript';ds.async = true;-->
+        <!--ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.unstable.js';-->
+        <!--ds.charset = 'UTF-8';-->
+        <!--(document.getElementsByTagName('head')[0]-->
+        <!--|| document.getElementsByTagName('body')[0]).appendChild(ds);-->
+    <!--})();-->
+<!--</script>-->
+<!--&lt;!&ndash; 多说公共JS代码 end &ndash;&gt;-->
 
 
 <!-- async load function -->
