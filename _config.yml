@@ -6,6 +6,7 @@ copyright_name: Ace ♪ Powered by Jekyll.
 description: "Zihin|Life"
 baseurl: ""
 url: "http://localhost:4000"
+#url: "http://zihin.top"
 
 twitter_username: tsezihin
 github_username:  Zihin
@@ -22,8 +23,8 @@ owner:
 
 
 # Data
-gavatar: http://ofqz295wv.bkt.clouddn.com/avatar-ace.jpg
-favicon: img/avatar-ace.ico
+gavatar: http://ofqz295wv.bkt.clouddn.com/avatar.png
+favicon: img/favicon.ico
 
 # Defaults for posts
 defaults:

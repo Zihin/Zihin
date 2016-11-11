@@ -1,67 +1,58 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2016-11-01T17:50:34+08:00</updated><id>http://localhost:4000//</id><title type="html">Ace Hsieh</title><subtitle>Zihin|Life</subtitle><entry><title type="html">Man must explore, and this is exploration at its greatest</title><link href="http://localhost:4000/2014/09/24/man-must-explore/" rel="alternate" type="text/html" title="Man must explore, and this is exploration at its greatest" /><published>2014-09-24T20:00:00+08:00</published><updated>2014-09-24T20:00:00+08:00</updated><id>http://localhost:4000/2014/09/24/man-must-explore</id><content type="html" xml:base="http://localhost:4000/2014/09/24/man-must-explore/">&lt;p&gt;Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.&lt;/p&gt;
-
-&lt;p&gt;Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.&lt;/p&gt;
-
-&lt;p&gt;What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.&lt;/p&gt;
-
-&lt;p&gt;A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her.&lt;/p&gt;
-
-&lt;p&gt;For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.&lt;/p&gt;
-
-&lt;h2 class=&quot;section-heading&quot;&gt;The Final Frontier&lt;/h2&gt;
-
-&lt;p&gt;There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.&lt;/p&gt;
-
-&lt;p&gt;There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.&lt;/p&gt;
-
-&lt;blockquote&gt;The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.&lt;/blockquote&gt;
-
-&lt;p&gt;Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.&lt;/p&gt;
-
-&lt;h2 class=&quot;section-heading&quot;&gt;Reaching for the Stars&lt;/h2&gt;
-
-&lt;p&gt;As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;#&quot;&gt;
-    &lt;img src=&quot;/img/post-sample-image.jpg&quot; alt=&quot;Post Sample Image&quot; /&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2016-11-11T17:57:54+08:00</updated><id>http://localhost:4000//</id><title type="html">Ace Hsieh</title><subtitle>Zihin|Life</subtitle><entry><title type="html">Convolutional Neural Networks for NLP</title><link href="http://localhost:4000/2016/11/11/cnn-for-nlp/" rel="alternate" type="text/html" title="Convolutional Neural Networks for NLP" /><published>2016-11-11T00:00:00+08:00</published><updated>2016-11-11T00:00:00+08:00</updated><id>http://localhost:4000/2016/11/11/cnn-for-nlp</id><content type="html" xml:base="http://localhost:4000/2016/11/11/cnn-for-nlp/">&lt;p&gt;&lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.001.jpeg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.002.jpeg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.003.jpeg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.004.jpeg&quot; alt=&quot;&quot; /&gt;
+&lt;a&gt;
+    &lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/Convolution_of_box_signal_with_itself2.gif&quot; /&gt;
+    &lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/b/b9/Convolution_of_spiky_function_with_box2.gif&quot; /&gt;
 &lt;/a&gt;
-&lt;span class=&quot;caption text-muted&quot;&gt;To go places and do things that have never been done before – that’s what living is all about.&lt;/span&gt;&lt;/p&gt;
+&lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.005.jpeg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.006.jpeg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.007.jpeg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.008.jpeg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.009.jpeg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.010.jpeg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.011.jpeg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.012.jpeg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.013.jpeg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.014.jpeg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.015.jpeg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.016.jpeg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.017.jpeg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.018.jpeg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.019.jpeg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.020.jpeg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.021.jpeg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.022.jpeg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.023.jpeg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.024.jpeg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.025.jpeg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.026.jpeg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.027.jpeg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.028.jpeg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.029.jpeg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.030.jpeg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.031.jpeg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.032.jpeg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.033.jpeg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.034.jpeg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.035.jpeg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.036.jpeg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.037.jpeg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.038.jpeg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.039.jpeg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.040.jpeg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.041.jpeg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.042.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.&lt;/p&gt;
+&lt;h4 id=&quot;references&quot;&gt;References&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;www.wildml.com/2015/11/understanding-convolutional-neural-networks-for-nlp/&quot;&gt;UNDERSTANDING CONVOLUTIONAL NEURAL NETWORKS FOR NLP&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore, and this is exploration at its greatest.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://neuralnetworksanddeeplearning.com/index.html&quot;&gt;Neural Networks and Deep Learning&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Placeholder text by &lt;a href=&quot;http://spaceipsum.com/&quot;&gt;Space Ipsum&lt;/a&gt;. Photographs by &lt;a href=&quot;https://www.flickr.com/photos/nasacommons/&quot;&gt;NASA on The Commons&lt;/a&gt;.&lt;/p&gt;</content><author><name>Zihin</name></author><category term="NASA" /><summary type="html">Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.</summary></entry><entry><title type="html">I believe every human has a finite number of heartbeats. I don’t intend to waste any of mine.</title><link href="http://localhost:4000/2014/09/18/i-believe/" rel="alternate" type="text/html" title="I believe every human has a finite number of heartbeats. I don't intend to waste any of mine." /><published>2014-09-18T20:00:00+08:00</published><updated>2014-09-18T20:00:00+08:00</updated><id>http://localhost:4000/2014/09/18/i-believe</id><content type="html" xml:base="http://localhost:4000/2014/09/18/i-believe/">&lt;p&gt;Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://natureofcode.com/book/chapter-10-neural-networks/&quot;&gt;Neural Networks&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.wildml.com/2015/12/implementing-a-cnn-for-text-classification-in-tensorflow/&quot;&gt;IMPLEMENTING A CNN FOR TEXT CLASSIFICATION IN TENSORFLOW&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.&lt;/p&gt;
-
-&lt;p&gt;A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her.&lt;/p&gt;
-
-&lt;p&gt;For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.&lt;/p&gt;
-
-&lt;h2 class=&quot;section-heading&quot;&gt;The Final Frontier&lt;/h2&gt;
-
-&lt;p&gt;There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.&lt;/p&gt;
-
-&lt;p&gt;There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.&lt;/p&gt;
-
-&lt;blockquote&gt;The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.&lt;/blockquote&gt;
-
-&lt;p&gt;Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.&lt;/p&gt;
-
-&lt;h2 class=&quot;section-heading&quot;&gt;Reaching for the Stars&lt;/h2&gt;
-
-&lt;p&gt;As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;#&quot;&gt;
-    &lt;img src=&quot;/img/post-sample-image.jpg&quot; alt=&quot;Post Sample Image&quot; /&gt;
-&lt;/a&gt;
-&lt;span class=&quot;caption text-muted&quot;&gt;To go places and do things that have never been done before – that’s what living is all about.&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.&lt;/p&gt;
-
-&lt;p&gt;As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore, and this is exploration at its greatest.&lt;/p&gt;
-
-&lt;p&gt;Placeholder text by &lt;a href=&quot;http://spaceipsum.com/&quot;&gt;Space Ipsum&lt;/a&gt;. Photographs by &lt;a href=&quot;https://www.flickr.com/photos/nasacommons/&quot;&gt;NASA on The Commons&lt;/a&gt;.&lt;/p&gt;</content><author><name>Zihin</name></author><category term="Space" /><category term="Explore" /><summary type="html">Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.</summary></entry></feed>
+&lt;h4 id=&quot;download&quot;&gt;Download&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.key&quot;&gt;Download Slides&lt;/a&gt;&lt;/p&gt;</content><author><name>Ace</name></author><category term="Deep Learning" /><summary type="html"></summary></entry></feed>
