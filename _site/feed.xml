@@ -1,4 +1,181 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2016-11-11T17:57:54+08:00</updated><id>http://localhost:4000//</id><title type="html">Ace Hsieh</title><subtitle>Zihin|Life</subtitle><entry><title type="html">Convolutional Neural Networks for NLP</title><link href="http://localhost:4000/2016/11/11/cnn-for-nlp/" rel="alternate" type="text/html" title="Convolutional Neural Networks for NLP" /><published>2016-11-11T00:00:00+08:00</published><updated>2016-11-11T00:00:00+08:00</updated><id>http://localhost:4000/2016/11/11/cnn-for-nlp</id><content type="html" xml:base="http://localhost:4000/2016/11/11/cnn-for-nlp/">&lt;p&gt;&lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.001.jpeg&quot; alt=&quot;&quot; /&gt;
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+<title type="text">Ace Hsieh</title>
+<generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
+<link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
+<link rel="alternate" type="text/html" href="http://localhost:4000" />
+<updated>2017-03-01T02:12:44+08:00</updated>
+<id>http://localhost:4000/</id>
+<author>
+  <name>Ace Hsieh</name>
+  <uri>http://localhost:4000/</uri>
+  <email>zihintse@gmail.com</email>
+</author>
+
+
+<entry>
+  <title type="html"><![CDATA[机器学习笔记]]></title>
+ <link rel="alternate" type="text/html" href="http://localhost:4000/machine%20learning/Machine-Learning-Notes/" />
+  <id>http://localhost:4000/machine%20learning/Machine-Learning-Notes</id>
+  <published>2016-11-29T00:00:00+08:00</published>
+  <updated>2016-11-29T00:00:00+08:00</updated>
+  <author>
+    <name>Ace Hsieh</name>
+    <uri>http://localhost:4000</uri>
+    <email>zihintse@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;h1 id=&quot;第1章&quot;&gt;第1章&lt;/h1&gt;
+
+&lt;h2 id=&quot;basics&quot;&gt;Basics&lt;/h2&gt;
+
+&lt;h3 id=&quot;独立同分布independent-and-identically-distributed-iid-iid&quot;&gt;&lt;strong&gt;独立同分布(Independent and identically distributed, IID, i.i.d.)&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;In probability theory and statistics, a sequence or other collection of random variables is independent and identically distributed (i.i.d.) &lt;u&gt;if each random variable has the ***same probability distribution*** as the others and all are ***mutually independent***&lt;/u&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;如实验条件保持不变，一系列的抛硬币的正反面结果是独立同分布。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;no-free-lunch-theorem&quot;&gt;&lt;strong&gt;No Free Lunch Theorem&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;针对某一具体域内的所有优化问题Q，算法A与算法B经过m步迭代之后达到目标函数给定值的所有可能性的累加和是相等的。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;在一定的前提下，所有学习算法的期望性能都跟随机胡猜差不多。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/public/16-11-29/14951989.jpg&quot; alt=&quot;From Wikipedia&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;假设有A、B两种任意（随机或确定）算法，对于所有问题集，它们的平均性能是相同的（性能可采用多种方法度量，如最优解、收敛速率等）。&lt;/p&gt;
+
+&lt;h3 id=&quot;np难题&quot;&gt;&lt;strong&gt;NP难题&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;​	在一个周六的晚上，你参加了一个盛大的晚会。由于感到局促不安，你想知道这一大厅中是否有你已经认识的人。你的主人向你提议说，你一定认识那位正在甜点盘附近角落的女士罗丝。不费一秒钟，你就能向那里扫视，并且发现你的主人是正确的。然而，如果没有这样的暗示，你就必须环顾整个大厅，一个个地审视每一个人，看是否有你认识的人。&lt;/p&gt;
+
+&lt;p&gt;​	生成问题的一个解通常比验证一个给定的解时间花费要多得多。这是这种一般现象的一个例子。与此类似的是，如果某人告诉你，数$13717421$可以写成两个较小的数的乘积，你可能不知道是否应该相信他，但是如果他告诉你他可以因式分解为$3607\times3803$，那么你就可以用一个袖珍计算器容易验证这是对的。人们发现，所有的完全多项式非确定性问题，都可以转换为一类叫做满足性问题的逻辑运算问题。既然这类问题的所有可能答案，都可以在多项式时间内计算，人们于是就猜想，是否这类问题，存在一个确定性算法，可以在多项式时间内，直接算出或是搜寻出正确的答案呢？这就是著名的NP=P？的猜想。 不管我们编写程序是否灵巧，判定一个答案是可以很快利用内部知识来验证，还是没有这样的提示而需要花费大量时间来求解，被看作逻辑和计算机科学中最突出的问题之一。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;首先这些p和np都是用来描述解决一个问题需要的时间和它输入规模之间的关系。&lt;/p&gt;
+
+  &lt;p&gt;&lt;strong&gt;P问题&lt;/strong&gt;&lt;/p&gt;
+
+  &lt;p&gt;一个问题可以在多项式$O(n^k)$的时间复杂度内解决。&lt;/p&gt;
+
+  &lt;p&gt;例如：n个数的排序（不超过$O(n^2)$）&lt;/p&gt;
+
+  &lt;p&gt;&lt;strong&gt;NP问题&lt;/strong&gt;&lt;/p&gt;
+
+  &lt;p&gt;一个问题的解可以在多项式的时间内被证实或证伪。&lt;/p&gt;
+
+  &lt;p&gt;例如：典型的子集求和问题,给定一个整数集合求是否存在一个非空子集它的和为零。如给定集合$S= {-1,3,2,-5,6}$，很明显子集${3,2,-5}$能满足问题，并且验证该解只需要线性时间复杂度就能被证实。&lt;/p&gt;
+
+  &lt;p&gt;&lt;strong&gt;NP-hard问题：&lt;/strong&gt;&lt;/p&gt;
+
+  &lt;p&gt;任意np问题都可以在多项式时间内归约为该问题。归约的意思是为了解决问题A，先将问题A归约为另一个问题B，解决问题B同时也间接解决了问题A。&lt;/p&gt;
+
+  &lt;p&gt;例如，停机问题。&lt;/p&gt;
+
+  &lt;p&gt;&lt;strong&gt;NPC问题&lt;/strong&gt;&lt;/p&gt;
+
+  &lt;p&gt;既是NP问题，也是NP-hard问题。&lt;/p&gt;
+
+  &lt;p&gt;例如，SAT问题（第一个NPC问题）。该问题的基本意思是，给定一系列布尔变量以及它的约束集，是否存在一个解使得它的输出为真。&lt;/p&gt;
+
+  &lt;p&gt;&lt;strong&gt;相互关系：&lt;/strong&gt;&lt;/p&gt;
+
+  &lt;p&gt;显然，所有P问题都是NP问题，反之则不一定。npc问题是np问题的子集，也是p问题和np问题的差异所在。如果找到一个多项式内能被解决的npc问题的解决方法，那么P=NP。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/P_np_np-complete_np-hard.svg/600px-P_np_np-complete_np-hard.svg.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.matrix67.com/blog/archives/105&quot;&gt;什么是P问题、NP问题和NPC问题&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.zhihu.com/question/27039635&quot;&gt;怎么理解 P 问题和 NP 问题？&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;bp算法&quot;&gt;&lt;strong&gt;BP算法&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;h3 id=&quot;异或exclusive-or-xor&quot;&gt;&lt;strong&gt;异或(Exclusive or, XOR)&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;异或也叫半加运算，其运算法则相当于不带进位的二进制加法：二进制下用1表示真，0表示假，则异或的运算法则为：0⊕0=0，1⊕0=1，0⊕1=1，1⊕1=0（同为0，异为1），这些法则与加法是相同的，只是不带进位。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;exclusive or 就是exclusive（排除）a and b这个种情况。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Input A&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Input B&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Output&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;more&quot;&gt;More&lt;/h2&gt;
+
+&lt;h3 id=&quot;the-halting-problem&quot;&gt;&lt;strong&gt;The Halting Problem&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;In computability theory, the halting problem is the problem of determining, from a description of an arbitrary computer program and an input, whether the program will finish running or continue to run forever.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;从前有家饭店，只卖包子和馒头，这时候假设存在一个聪明的侍者，这个侍者可以判断任何一个前来点餐的客人要点什么菜，这时候有个腹黑的家伙说：&lt;/p&gt;
+
+  &lt;p&gt;“如果你判断我要点包子，那我就点馒头；如果你判断我点馒头，那我就吃包子。”&lt;/p&gt;
+
+  &lt;p&gt;那么显然这是矛盾的，所以不存在这样的侍者。&lt;/p&gt;
+
+  &lt;p&gt;这个例子与停机问题大致上是相通的。侍者就是停机问题中那个用来判断别的程序是否停机的程序，而包子和馒头对应停机与不停机的状态。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.matrix67.com/blog/archives/55&quot;&gt;不可解问题(Undecidable Decision Problem)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.matrix67.com/blog/archives/901&quot;&gt;停机问题、Chaitin常数与万能证明方法&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://v.youku.com/v_show/id_XMTYxMjM5ODYyMA==.html#paction&quot;&gt;See Proof in Youku Video&lt;/a&gt;&lt;/p&gt;
+
+
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/machine%20learning/Machine-Learning-Notes/&quot;&gt;机器学习笔记&lt;/a&gt; was originally published by Ace Hsieh at &lt;a href=&quot;http://localhost:4000&quot;&gt;Ace Hsieh&lt;/a&gt; on November 29, 2016.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Convolutional Neural Networks for NLP]]></title>
+ <link rel="alternate" type="text/html" href="http://localhost:4000/machine%20learning/cnn/cnn-for-nlp/" />
+  <id>http://localhost:4000/machine%20learning/cnn/cnn-for-nlp</id>
+  <published>2016-11-11T00:00:00+08:00</published>
+  <updated>2016-11-11T00:00:00+08:00</updated>
+  <author>
+    <name>Ace Hsieh</name>
+    <uri>http://localhost:4000</uri>
+    <email>zihintse@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;&lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.001.jpeg&quot; alt=&quot;&quot; /&gt;
 &lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.002.jpeg&quot; alt=&quot;&quot; /&gt;
 &lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.003.jpeg&quot; alt=&quot;&quot; /&gt;
 &lt;img src=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.004.jpeg&quot; alt=&quot;&quot; /&gt;
@@ -55,4 +232,10 @@
 &lt;p&gt;&lt;a href=&quot;http://www.wildml.com/2015/12/implementing-a-cnn-for-text-classification-in-tensorflow/&quot;&gt;IMPLEMENTING A CNN FOR TEXT CLASSIFICATION IN TENSORFLOW&lt;/a&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;download&quot;&gt;Download&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.key&quot;&gt;Download Slides&lt;/a&gt;&lt;/p&gt;</content><author><name>Ace</name></author><category term="Deep Learning" /><summary type="html"></summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.key&quot;&gt;Download Slides&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/machine%20learning/cnn/cnn-for-nlp/&quot;&gt;Convolutional Neural Networks for NLP&lt;/a&gt; was originally published by Ace Hsieh at &lt;a href=&quot;http://localhost:4000&quot;&gt;Ace Hsieh&lt;/a&gt; on November 11, 2016.&lt;/p&gt;
+  </content>
+</entry>
+
+</feed>

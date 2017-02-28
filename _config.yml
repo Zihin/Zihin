@@ -1,62 +1,108 @@
-# Site settings
-title: Ace Hsieh
-header-img: img/home-bg.jpg
-email: zihintse@gmail.com
-copyright_name: Ace ♪ Powered by Jekyll.
-description: "Zihin|Life"
-baseurl: ""
-url: "http://localhost:4000"
-#url: "http://zihin.top"
+title:            Ace Hsieh
+description:      Life is too short for long-term grudges.
 
-twitter_username: tsezihin
-github_username:  Zihin
-facebook_username:  zihin
-email_username:  zihintse@gmail.com
-#zhihu_username: Zihin
+# put your disqus here
+disqus_shortname: http-zihin-top
+reading_time:     true # if true, shows the estimated reading time for a post
+words_per_minute: 200
+logo:             images/logo.png # logo visible in the topbar
+excerpt_separator: <!--more-->
+# Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
+# When testing locally leave blank or use http://localhost:4000
 
+url: http://localhost:4000
 
-# About/contact
+# draw your top menu here
+# each item must have a title and a url.
+#   To list post categories. use type: 'categories'
+#   To create sub categories. add a submenu item
+# See the example
+menu:
+  - title: 'Home'
+    url: '/'
+#  - title: 'Fork'
+#    url: 'http://github.com/zihin'
+#  - title: 'Install'
+#    url: 'http://github.com/aron-bordin/neo-hpstr-jekyll-theme#installation'
+  - title: 'Tags'
+    url: '/tags'
+  - title: 'Categories'
+    url: '/categories'
+    type: 'categories'
+  - title: 'About'
+    url: '/about'
+#  - title: 'Favorites'
+#    url: '#'
+#    submenu:
+#      - title: 'Code Highlighter'
+#        url: '/intro/code-highlighting-post/'
+#      - title: 'Sample Post'
+#        url: '/intro/sample-post/'
+
+# Owner/author information
 owner:
-  name: "Ace Hsieh"
-  email: zihintse@gmail.com
-  bio: "Life is too short for long-term grudges."
+  name:           Ace Hsieh
+  site:           http://zihin.top
+  avatar:         images/avatar.jpg
+  bio:            "Life is too short for long-term grudges."
+  email:          zihintse@gmail.com
+  # Twitter nick for use in Twitter cards and follow button.
+  twitter: tsezihin # if no twitter in this config, the twitter follow button will be removed
+  # GitHub nick for use in follow button in author block.
+  github: zihin
 
+# Twitter account associated with the site if different from owner/author twitter account.
+# Used in Twitter cards.
+twitter: tsezihin
 
-# Data
-gavatar: http://ofqz295wv.bkt.clouddn.com/avatar.png
-favicon: img/favicon.ico
+# Social networking links used in author block underneath posts. Update and remove as you like.
+social:
+  - title: "github"
+    url: "https://github.com/zihin"
+  - title: "linkedin"
+    url: "http://www.linkedin.com/in/tsezihin/"
+#  - title: "youtube"
+#    url: "https://www.youtube.com/channel/UCfnSek-9HPWOx5e2pH7VFgg"
 
-# Defaults for posts
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      author: "Ace"
-      header-img: "img/Trello.jpg" # We don't want posts without a header image, that whould mean white on white
+# Background image to be tiled on all pages
+background:
 
-
-
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone: Asia/Shanghai
-
-
-# Google Analytics
-# To enable google analytics, uncomment below line with a valid Google Tracking ID
-# google_tracking_id:
+# Analytics and webmaster tools stuff goes here
 google_analytics: UA-86465655-1
 google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:
 
-
-# Build settings
-markdown: kramdown
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    Asia/Shanghai
+locale:      en_US
+future:      true
 highlighter: rouge
-permalink: pretty
-paginate: 5
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+markdown:    kramdown
+sass:
+  sass_dir: _sass
+  style: compressed
 
-gems: [jekyll-paginate, jekyll-feed]
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title/
+
+# Amount of post to show on home page
+paginate: 5
+
+# if true, shows the floatting share buttons
+float_share: true
+
+# Octopress
+# Default extensions
+post_ext: md
+page_ext: md
+# Found in _templates/
+post_layout: post
+page_layout: page
+# Format titles with titlecase?
+titlecase: true
+
+include: [".htaccess"]
+exclude: ["demo/*", "lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
+gems: [jekyll-paginate]
+theme: neo-hpstr-jekyll-theme

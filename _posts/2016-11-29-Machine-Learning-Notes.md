@@ -1,23 +1,21 @@
 ---
 layout:     post
 title:      "机器学习笔记"
-tag:        [Machine Learning]
-header-img: "img/tags-bg.jpg"
+tags:       [Machine Learning]
+categories: [Machine Learning]
 ---
 
-# 机器学习笔记
+# 第1章
 
-## 第1章
+## Basics
 
-### Basics
-
-#### **独立同分布(Independent and identically distributed, IID, i.i.d.)**
+### **独立同分布(Independent and identically distributed, IID, i.i.d.)**
 
 In probability theory and statistics, a sequence or other collection of random variables is independent and identically distributed (i.i.d.) <u>if each random variable has the ***same probability distribution*** as the others and all are ***mutually independent***</u>. 
 
 > 如实验条件保持不变，一系列的抛硬币的正反面结果是独立同分布。
 
-#### **No Free Lunch Theorem**
+### **No Free Lunch Theorem**
 
 针对某一具体域内的所有优化问题Q，算法A与算法B经过m步迭代之后达到目标函数给定值的所有可能性的累加和是相等的。
 
@@ -27,7 +25,7 @@ In probability theory and statistics, a sequence or other collection of random v
 
 假设有A、B两种任意（随机或确定）算法，对于所有问题集，它们的平均性能是相同的（性能可采用多种方法度量，如最优解、收敛速率等）。
 
-#### **NP难题**
+### **NP难题**
 
 ​	在一个周六的晚上，你参加了一个盛大的晚会。由于感到局促不安，你想知道这一大厅中是否有你已经认识的人。你的主人向你提议说，你一定认识那位正在甜点盘附近角落的女士罗丝。不费一秒钟，你就能向那里扫视，并且发现你的主人是正确的。然而，如果没有这样的暗示，你就必须环顾整个大厅，一个个地审视每一个人，看是否有你认识的人。
 
@@ -72,11 +70,11 @@ In probability theory and statistics, a sequence or other collection of random v
 
 [怎么理解 P 问题和 NP 问题？](https://www.zhihu.com/question/27039635)
 
-#### **BP算法**
+### **BP算法**
 
 
 
-#### **异或(Exclusive or, XOR)**
+### **异或(Exclusive or, XOR)**
 
 异或也叫半加运算，其运算法则相当于不带进位的二进制加法：二进制下用1表示真，0表示假，则异或的运算法则为：0⊕0=0，1⊕0=1，0⊕1=1，1⊕1=0（同为0，异为1），这些法则与加法是相同的，只是不带进位。
 
@@ -91,9 +89,9 @@ In probability theory and statistics, a sequence or other collection of random v
 
 
 
-### More
+## More
 
-#### **The Halting Problem**
+### **The Halting Problem**
 
 In computability theory, the halting problem is the problem of determining, from a description of an arbitrary computer program and an input, whether the program will finish running or continue to run forever.
 

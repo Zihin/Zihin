@@ -1,0 +1,19 @@
+[
+  
+    {
+      "title"    : "机器学习笔记",
+      "category" : "",
+      "tags"     : "Machine Learning",
+      "url"      : "http://localhost:4000/machine%20learning/Machine-Learning-Notes/",
+      "date"     : "2016-11-29 00:00:00 +0800"
+    } ,
+  
+    {
+      "title"    : "Convolutional Neural Networks for NLP",
+      "category" : "",
+      "tags"     : "CNN, Machine Learning",
+      "url"      : "http://localhost:4000/machine%20learning/cnn/cnn-for-nlp/",
+      "date"     : "2016-11-11 00:00:00 +0800"
+    } 
+  
+]

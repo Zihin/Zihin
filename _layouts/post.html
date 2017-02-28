@@ -1,183 +1,49 @@
----
-layout: default
----
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+{% include head.html %}
+</head>
 
-<!-- Post Header -->
-<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-heading">
-                    <h1>{{ page.title }}</h1>
-                    {% if page.subtitle %}
-                    <h2 class="subheading">{{ page.subtitle }}</h2>
-                    {% endif %}
-                    <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span>
-                </div>
+<body id="post" {% if page.image.feature %}class="feature"{% endif %}>
+
+{% include browser-upgrade.html %}
+{% include header.html %}
+
+<div id="main" role="main">
+  <article class="hentry">
+    <div class="entry-content">
+        {% if page.image.feature %}
+            <div class="entry-image-index">
+              <img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }}">
+              {% if page.image.credit %}<div class="image-credit">Image source: <a target="_blank" href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></div><!-- /.image-credit -->{% endif %}
             </div>
-        </div>
-    </div>
-</header>
+        {% endif %}
+      <h1 class="post-title entry-title">{{ page.title }}</h1>
+      {{ content }}
+      <footer class="entry-meta">
+        <span class="entry-tags">{% for tag in page.tags %}<a href="{{ site.url }}/tags#{{ tag }}" title="Pages tagged {{ tag }}" class="tag"><span class="term">{{ tag }}</span></a>{% unless forloop.last %}{% endunless %}{% endfor %}</span>
+        {% if page.modified %}<span>Updated on <span class="entry-date date updated"><time datetime="{{ page.modified }}">{{ page.modified | date: "%B %d, %Y" }}</time></span></span>
+        {% endif %}
+        <span class="author vcard"><span class="fn">{{ site.owner.name }}</span></span>
+        {% if page.share != false %}{% include social-share.html %}{% endif %}
+      </footer>
+    </div><!-- /.entry-content -->
+    {% include author.html %}
+    {% if page.comments != false and site.disqus_shortname %}<section id="disqus_thread"></section><!-- /#disqus_thread -->{% endif %}
+    {% if site.related_posts.size > 0 %}{% include read-more.html %}{% endif %}
+  </article>
+</div><!-- /#main -->
 
-<!-- Post Content -->
-<article>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+{% include scripts.html %}
 
-				{{ content }}
+<div class="footer-wrapper">
+  <footer role="contentinfo">
+    {% include footer.html %}
+  </footer>
+</div><!-- /.footer-wrapper -->
 
-                <hr>
-
-                <ul class="pager">
-                    {% if page.previous.url %}
-                    <li class="previous">
-                        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
-                    </li>
-                    {% endif %}
-                    {% if page.next.url %}
-                    <li class="next">
-                        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
-                    </li>
-                    {% endif %}
-                </ul>
-
-                <hr>
-                <!--<div class="ds-share flat"-->
-                     <!--data-thread-key="{{page.id}}" data-title="{{page.title}}"-->
-                     <!--data-images="{{ site.url }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}"-->
-                     <!--data-content="{{ content | strip_html | truncate:80 }} | Ace Hsieh's blog"-->
-                     <!--data-url="{{site.url}}{{page.url}}">-->
-                    <!--<div class="ds-share-inline">-->
-                        <!--<ul  class="ds-share-icons-32">-->
-
-                            <!--<li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">Share To：</a></li>-->
-                            <!--<li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">Sina Weibo</a></li>-->
-                            <!--<li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">Wechat</a></li>-->
-
-                            <!--<li> <a class="ds-facebook" href="javascript:void(0);" data-service="facebook">Facebook</a> </li>-->
-                            <!--<li> <a class="ds-twitter" href="javascript:void(0);" data-service="twitter">Twitter</a> </li>-->
-                            <!--<li> <a class="ds-linkedin" href="javascript:void(0);" data-service="linkedin">Linkedin</a> </li>-->
-
-                        <!--</ul>-->
-                        <!--<div class="ds-share-icons-more">-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-
-                <!-- JiaThis Button BEGIN -->
-                <div class="jiathis_style">
-                    <span class="jiathis_txt">Share To：</span>
-                    <a class="jiathis_button_tsina">Sina Weibo</a>
-                    <a class="jiathis_button_weixin">Wechat</a>
-                    <a class="jiathis_button_fb">Facebook</a>
-                    <a class="jiathis_button_googleplus">Google+</a>
-                    <a class="jiathis_button_cqq">QQ</a>
-                    <a href="http://www.jiathis.com/share?uid=2118175" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">More</a>
-                </div>
-                <script type="text/javascript">
-                    var jiathis_config = {data_track_clickback:'true'};
-                </script>
-                <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=2118175" charset="utf-8"></script>
-                <!-- JiaThis Button END -->
-
-                <br>
-
-
-                <!--<div id="disqus_thread"></div>-->
-                <!--<script>-->
-
-                    <!--/**-->
-                     <!--*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.-->
-                     <!--*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/-->
-                    <!--/*-->
-                     <!--var disqus_config = function () {-->
-                     <!--this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable-->
-                     <!--this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable-->
-                     <!--};-->
-                     <!--*/-->
-                    <!--(function() { // DON'T EDIT BELOW THIS LINE-->
-                        <!--var d = document, s = d.createElement('script');-->
-                        <!--s.src = '//http-zihin-top.disqus.com/embed.js';-->
-                        <!--s.setAttribute('data-timestamp', +new Date());-->
-                        <!--(d.head || d.body).appendChild(s);-->
-                    <!--})();-->
-                <!--</script>-->
-                <!--<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>-->
-
-
-
-                <!-- 多说评论框 start -->
-                <div class="ds-thread" data-thread-key="{{page.id}}" data-title="{{page.title}}" data-url="{{site.url}}{{page.url}}"></div>
-                <!-- 多说评论框 end -->
-
-                <!--<script>-->
-                    <!--var idcomments_acct = '23a49226c5251efdafe09e919fc09c59';-->
-                    <!--var idcomments_post_id;-->
-                    <!--var idcomments_post_url;-->
-                <!--</script>-->
-                <!--<span id="IDCommentsPostTitle" style="display:none"></span>-->
-                <!--<script type='text/javascript' src='https://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>-->
-
-                <!--&lt;!&ndash; UY BEGIN &ndash;&gt;-->
-                <!--<div id="uyan_frame"></div>-->
-                <!--<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2118175"></script>-->
-                <!--&lt;!&ndash; UY END &ndash;&gt;-->
-
-            </div>
-        </div>
-    </div>
-</article>
-
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-    var duoshuoQuery = {short_name:"zihin"};
-    (function() {
-        var ds = document.createElement('script');
-        ds.type = 'text/javascript';ds.async = true;
-        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.unstable.js';
-        ds.charset = 'UTF-8';
-        (document.getElementsByTagName('head')[0]
-        || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-</script>
-<!-- 多说公共JS代码 end -->
-
-
-<!-- async load function -->
-<script>
-    function async(u, c) {
-        var d = document, t = 'script',
-                o = d.createElement(t),
-                s = d.getElementsByTagName(t)[0];
-        o.src = u;
-        if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
-        s.parentNode.insertBefore(o, s);
-    }
-</script>
-
-<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
-<script>
-    async("http://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
-        anchors.options = {
-            visible: 'always',
-            placement: 'right',
-            icon: '#'
-        };
-        anchors.add().remove('.intro-header h1').remove('.subheading');
-    })
-</script>
-<style>
-    /* place left on bigger screen */
-    @media all and (min-width: 800px) {
-        .anchorjs-link{
-            position: absolute;
-            left: -0.75em;
-            font-size: 1.1em;
-            margin-top : -0.1em;
-        }
-    }
-</style>
-
-<hr>
-
+</body>
+</html>
