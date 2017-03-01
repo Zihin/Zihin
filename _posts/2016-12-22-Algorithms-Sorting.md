@@ -7,7 +7,7 @@ categories: [Algorithm]
 
 [八大排序算法](http://blog.csdn.net/hguisu/article/details/7776068)
 
- [九大排序算法再总结](http://blog.csdn.net/xiazdong/article/details/8462393)
+[九大排序算法再总结](http://blog.csdn.net/xiazdong/article/details/8462393)
 
 [[经典排序算法][集锦]](http://www.cnblogs.com/kkun/archive/2011/11/23/2260312.html)
 
