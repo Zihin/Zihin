@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "机器学习笔记"
+title:      "Machine Learning Notes"
 tags:       [Machine Learning]
 categories: [Machine Learning]
 ---

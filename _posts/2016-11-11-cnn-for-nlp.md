@@ -2,7 +2,7 @@
 layout:     post
 title:      "Convolutional Neural Networks for NLP"
 tags:       [CNN, Machine Learning]
-categories: [Machine Learning, CNN]
+categories: [Machine Learning]
 ---
 ![](http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.001.jpeg)
 ![](http://ofqz295wv.bkt.clouddn.com/Convolutional%20Neural%20Networks.002.jpeg)
