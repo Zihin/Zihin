@@ -29,6 +29,9 @@ menu:
   - title: 'Categories'
     url: '/categories'
     type: 'categories'
+  - title: 'Contents'
+    url: '/posts'
+#    type: 'categories'
   - title: 'About'
     url: '/about'
 #  - title: 'Favorites'
@@ -62,8 +65,8 @@ social:
     url: "https://github.com/zihin"
   - title: "linkedin"
     url: "http://www.linkedin.com/in/tsezihin/"
-  - title: "zhihu"
-    url: "https://www.zhihu.com/people/zihin"
+#  - title: "zhihu"
+#    url: "https://www.zhihu.com/people/zihin"
 
 
 #  - title: "youtube"
